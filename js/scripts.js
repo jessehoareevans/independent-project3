@@ -1,5 +1,5 @@
 var leapYear = function(year) {
-  if (( year%4===0) && (year % 100 !==0) || (year % 400===0)) {
+  if (( year % 15===0) || (year % 5 == 0) || (year % 3===0)) {
     return true;
   }  else {
   return false;
