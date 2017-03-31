@@ -4,6 +4,22 @@ var leapYear = function(year) {
   }  else {
   return false;
   }
+
+function convertNumberToWord(number){
+  var answer = [];
+  var pingPong = ["ping-pong", "pong", "pingPong"];
+  var divisible = [15, 5, 3];
+  var total = number;
+  for (i = total; total>0;){
+    for (j=0; j<pingPong.length; j++){
+      if (total-pingPong[j]>=0){
+        answer.push(divisble[j]);
+        total-=pingPong[j];
+        break
+      }
+    }
+  }
+}
 };
 
 $(document).ready(function() {
