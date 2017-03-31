@@ -9,13 +9,13 @@ function convertNumberToWord(number){
     for (var i = 1; i <= number; i++) {
       if(i % 15===0) {
         answer.push("ping-pong")
-          }
+      }
       else if(i % 5===0) {
         answer.push("pong")
       }
       else if(i % 3===0) {
         answer.push("ping")
-            }
+      }
     }
   }
 
@@ -29,7 +29,7 @@ $(document).ready(function() {
     event.preventDefault();
     var number = parseInt($("input#input").val());
     var result = numberToWord(number);
-  
+
 
       $(".output").text(number);
 
