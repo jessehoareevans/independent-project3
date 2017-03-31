@@ -1,31 +1,25 @@
-var leapYear = function(year) {
+var numberToWord = function(number) {
 
 
 function convertNumberToWord(number){
   var answer = [];
-  var pingPong = ["ping-pong", "pong", "pingPong"];
-  var divisible = [15, 5, 3];
-  var total = number;
-  for (i = 1; i <= 100; i++) {
-    if ( i % 3 && i % 5) {
-      document.write(i);
-    } else {
-      if (i % 3=== 0) {
-        document.write("ping");
-        skip= 1;
-      }
-      if (i%5 === 0) {
-        document.write("pong");
-        skip = 1
-      }
-      if (i%15 === 0) {
-        document.write("ping-pong")
-        skip = 1
-      }
+
+  if (!number || number <= 0) {
+    return false;
+  }
+  // var pingPong = ["ping-pong", "pong", "pingPong"];
+  // var divisible = [15, 5, 3];
+  // var total = number;
+  for (var i = 1; i <= number; i++) {
+    if(i % 15===0) {
+      answer.push("ping-pong")
+        }
+    // else (i % 5===0) {
+    //   answer.push("pong")
+    // }
+    else (i % 3===0) {
+      answer.push("ping")
     }
-        answer.push(divisble[j]);
-        total-=pingPong[j];
-        break
       }
     }
   }
@@ -38,12 +32,12 @@ function convertNumberToWord(number){
 // };
 
 $(document).ready(function() {
-  $("form#leap-year").submit(function(event) {
+  $("form#ping-pong").submit(function(event) {
     event.preventDefault();
-    var year = parseInt($("input#year").val());
-    var result = leapYear(year);
+    var number = parseInt($("input#input").val());
+    var result = numberToWord(number);
 
-      $(".year").text(year);
+      $(".output").text(number);
 
     if (!result) {
      $(".not").text("not");
@@ -82,7 +76,25 @@ $(document).ready(function() {
 
 
 
-
+// if ( i % 3 && i % 5) {
+//   document.write(i);
+// } else {
+//   if (i % 3 === 0) {
+//     document.write("ping");
+//     skip= 1;
+//   }
+//   if (i%5 === 0) {
+//     document.write("pong");
+//     skip = 1
+//   }
+//   if (i%15 === 0) {
+//     document.write("ping-pong")
+//     skip = 1
+//   }
+// }
+    // answer.push(divisble[j]);
+    // total-=pingPong[j];
+    // break
 
 // var digits = function(number) {
 //
