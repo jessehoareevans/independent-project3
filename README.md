@@ -22,6 +22,10 @@ This will prompt the user to enter a number if they leave the field blank.
   Example Input: ""
   Example Output: "Please fill out this field"
 
+This website will only accept numbers
+  Example Input: 1
+  Example Output: 1
+
 ## Technologies Used
 
 _{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
