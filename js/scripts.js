@@ -6,44 +6,32 @@ function convertNumberToWord(number){
 
   if (!number || number <= 0) {
     return false;
-  }
-  // var pingPong = ["ping-pong", "pong", "pingPong"];
-  // var divisible = [15, 5, 3];
-  // var total = number;
-  for (var i = 1; i <= number; i++) {
-    if(i % 15===0) {
-      answer.push("ping-pong")
-        }
-    // else (i % 5===0) {
-    //   answer.push("pong")
-    // }
-    else (i % 3===0) {
-      answer.push("ping")
-    }
+    for (var i = 1; i <= number; i++) {
+      if(i % 15===0) {
+        answer.push("ping-pong")
+          }
+      else if(i % 5===0) {
+        answer.push("pong")
       }
+      else if(i % 3===0) {
+        answer.push("ping")
+            }
     }
   }
-//   if (( year % 15===0) || (year % 5 === 0) || (year % 3===0)) {
-//     return true;
-//   }  else {
-//   return false;
-//   }
-// }
-// };
+
+
+    }
+  }
+
 
 $(document).ready(function() {
   $("form#ping-pong").submit(function(event) {
     event.preventDefault();
     var number = parseInt($("input#input").val());
     var result = numberToWord(number);
+  
 
       $(".output").text(number);
-
-    if (!result) {
-     $(".not").text("not");
-   } else {
-     $(".not").text("");
-   }
 
    $("#result").show();
   });
@@ -69,11 +57,19 @@ $(document).ready(function() {
 
 
 
+// var pingPong = ["ping-pong", "pong", "pingPong"];
+// var divisible = [15, 5, 3];
+// var total = number;
 
 
 
-
-
+//   if (( year % 15===0) || (year % 5 === 0) || (year % 3===0)) {
+//     return true;
+//   }  else {
+//   return false;
+//   }
+// }
+// };
 
 
 // if ( i % 3 && i % 5) {

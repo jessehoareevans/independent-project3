@@ -18,3 +18,9 @@ h2 {
 body {
   background-color: #E79988;
 }
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
