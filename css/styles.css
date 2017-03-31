@@ -6,10 +6,15 @@ p {
 }
 h2 {
   padding-left: 15px;
+  font-size: 22px;
+  text-decoration: underline;
 }
 #ping-pong {
   padding-left: 15px;
 }
 .jumbotron {
   text-align: center;
+}
+body {
+  background-color: #E79988;
 }

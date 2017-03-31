@@ -10,12 +10,16 @@ function convertNumberToWord(number){
     if ( i % 3 && i % 5) {
       document.write(i);
     } else {
-      if (i % 3===0) {
+      if (i % 3=== 0) {
         document.write("ping");
         skip= 1;
       }
-      if (i%5 ===0) {
+      if (i%5 === 0) {
         document.write("pong");
+        skip = 1
+      }
+      if (i%15 === 0) {
+        document.write("ping-pong")
         skip = 1
       }
     }
