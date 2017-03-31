@@ -1,41 +1,32 @@
-$(document).ready(function(){
-
-  function digitCheck(string){
-    var digits = new RegExp (/[0-9]/)
-    var check = true;
-
-    for (i=0; i<string.length; i++){
-      if (digits.test(string[i])===false){
-        check=false;
-        break;
-      }
-    }
-    if (check===false){
-      return false;
-    }
-    else {
-      return true;
-    }
-  }
-
-  function divideNumber(number){
-    var answer = [];
-      for (i = 0, )
-
-  }
+var digits = function(number) {
 
 
+  // if (( number%4===0) && (number % 100 !==0) || (number % 400===0)) {
+  //   return true;
+  // }  else {
+  // return false;
+  // }
+};
 
+$(document).ready(function() {
+  $("form#ping-pong").submit(function(event) {
+    event.preventDefault();
+    var number = parseInt($("input#numbers").val());
+    var results = [];
 
+    for( var i=1; i <= number; i++) {
+      var resulting = i
 
+      if (resulting%"3"===0) {
+        resulting = "ping"
+      };
 
-  $('form#ping-pong').submit(function(event){
+      // $(".list").append("<ul>" + result "</ul>");
+    };
+    $("button#play").click(function(){
+        $(("#list").append(("<ul>" + resulting "</ul>"));
+    });
 
-     var numberInput = $('#numberInput').val();
-     if(digitCheck(numberInput)===false){
-      $('#answer').text('Please enter a number');
-    }
-
-  event.preventDefault();
+   $("#result").show();
   });
 });

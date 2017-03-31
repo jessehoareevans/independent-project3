@@ -8,18 +8,52 @@
     <title>Ping-Pong</title>
   </head>
   <body>
+    <div class="container">
+      <div class="well">
+        <h1>Ping-Pong</h1>
+      </div>
+      <h2>Rules</h2>
+        <p>-Numbers divisible by 3 are replaced with "ping" <br>-Numbers divisible by 5 are replaced with "pong" <br>-Numbers divisible by 15 are replaced with "ping-pong"</p>
+      <form id="ping-pong">
+      <div class="form-group">
+        <label for="numbers">Enter a number to play the game</label>
+        <input id="numbers" type="text" required>
+      </div>
+      <button id="play" type="submit" class="btn">Play!</button>
+      </form>
+      <div id="result">
+        <ul id="list"></ul>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <body>
+    <div class="containter">
     <div class="well">
       <h1>Ping-Pong</h1>
     </div>
     <h2>Rules</h2>
     <p>-Numbers divisible by 3 are replaced with "ping" <br>-Numbers divisible by 5 are replaced with "pong" <br>-Numbers divisible by 15 are replaced with "ping-pong"</p>
     <form id="ping-pong">
-      <label for="numberInput">Type an integer to play</label>
-      <input type="text" id='numberInput' required>
-      <button type='submit'>Submit</button>
+    <div class="form-group">
+      <label for="year">Enter a year and find out if it's a leap year:</label>
+      <input id="year" type="text">
+     </div>
+     <button type="submit" class="btn">Find out!</button>
     </form>
-    <div>
-      <h3 id='answer'></h3>
+    <div id="result">
+      <p><span class="year"></span> is <span class="not"></span> a leap year.</p>
     </div>
   </body>
-</html>
+</html> -->
