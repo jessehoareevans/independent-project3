@@ -1,26 +1,37 @@
 var leapYear = function(year) {
-  if (( year % 15===0) || (year % 5 == 0) || (year % 3===0)) {
-    return true;
-  }  else {
-  return false;
-  }
+
 
 function convertNumberToWord(number){
   var answer = [];
   var pingPong = ["ping-pong", "pong", "pingPong"];
   var divisible = [15, 5, 3];
   var total = number;
-  for (i = total; total>0;){
-    for (j=0; j<pingPong.length; j++){
-      if (total-pingPong[j]>=0){
+  for (i = 1; i <= 100; i++) {
+    if ( i % 3 && i % 5) {
+      document.write(i);
+    } else {
+      if (i % 3===0) {
+        document.write("ping");
+        skip= 1;
+      }
+      if (i%5 ===0) {
+        document.write("pong");
+        skip = 1
+      }
+    }
         answer.push(divisble[j]);
         total-=pingPong[j];
         break
       }
     }
   }
-}
-};
+//   if (( year % 15===0) || (year % 5 === 0) || (year % 3===0)) {
+//     return true;
+//   }  else {
+//   return false;
+//   }
+// }
+// };
 
 $(document).ready(function() {
   $("form#leap-year").submit(function(event) {
