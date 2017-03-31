@@ -40,7 +40,9 @@ This website will change numbers divisible by three return the word "ping-pong"
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+HTML
+CSS
+JS
 
 ### License
 
