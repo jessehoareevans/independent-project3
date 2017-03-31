@@ -1,30 +1,26 @@
-# _{Application Name}_
+# Ping Pong
 
-#### _{Brief description of application}, {Date of current version}_
+#### Inputted numbers will return all listed numbers and add "ping" or "pong" to corresponding ids, 3.31.17
 
-#### By _**{List of contributors}**_
+#### By Jesse Hoare Evans
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+Numbers that get inputted will output the entire list up until that number while also convert numbers divisible by three to "ping" numbers divisible by 5 to "pong" and numbers divisible by 15 to "ping-pong".
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+Follow this repository https://github.com/jessehoareevans/independent-project3
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+Does not work properly
 
-## Support and contact details
+## Specifications
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+This will prompt the user to enter a number if they leave the field blank.
+  Example Input: ""
+  Example Output: "Please fill out this field"
 
 ## Technologies Used
 
